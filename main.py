@@ -62,7 +62,7 @@ def daily(message: Message):
         f.write('name: ' + user + ', date: ' + message_date + ', time: ' + message_time + ', tag: ' + tag + ', e' + '\n')
         f.close()
 
-
+    # Ключевое сообщение 123, по которому возвращаем готовый массив и собираем EXCEL(в будущем)
     if input_message == '123':
         read_log_file = open('daily.log')
         log_file_lines = [line.strip() for line in read_log_file]
@@ -101,7 +101,8 @@ def daily(message: Message):
             else:
                 info_list[i][5] = '-'
         print(info_list)
-
+         
+        # Собираем готовый нассив данных    
         result = [[0 for x in range(5)] for y in range(max_line)]
         for i in range(0, max_line-1):
             for j in range(i+1, max_line):
