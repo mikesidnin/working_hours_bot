@@ -1,4 +1,4 @@
-token = '1350704024:AAHJ9oRZzTD_7igXZh4CpuKt05LHsO8JsZA'
+token = ''
 
 plus = '+'
 minus = '-'
